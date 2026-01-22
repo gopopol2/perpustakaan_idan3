@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2026 at 08:38 AM
+-- Generation Time: Jan 22, 2026 at 02:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -41,13 +41,16 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id_buku`, `judul`, `pengarang`, `penerbit`, `tahun`, `stok`) VALUES
-(1, '19 juta lapangan pekerjaan', 'gibran', 'fufufafa', '2025', 2),
-(2, 'sawit', 'idan', 'walid', '2017', 7),
-(3, 'walid CEO', 'idan', 'idan', '2025', 6),
-(4, 'WAMID PENAKLUK NAGA KEPALA 3', 'WALID', 'WALID', '2025', 1),
-(5, 'WALID PEMINJAM DUIT', 'WALID', 'WALID', '2026', 6),
-(6, 'MBG [MAKANAN BERGIZI GRATIS] KATANYA', 'WALID', 'ARIL', NULL, 7),
-(7, 'SAMSUDIN ROKO SAMSU', 'ACU', 'ACU', '2025', 2);
+(1, 'Laskar Pelangi', 'Andrea Hirata', 'Bentang Pustaka', '2025', 10),
+(2, 'Bumi Manusia ', 'Pramoedya Ananta Toer', 'Hasta Mitra', '1980', 10),
+(3, 'Negara 5 Menara', 'Ahmad Fuadi', 'Gramedia Pustaka Utama', '2009', 10),
+(4, 'Perahu Kertas', 'Dewi Lestari', 'Bentang Pustaka', '2009', 10),
+(5, 'Ayat-Ayat Cinta', 'Habiburrahman El Shirazy', 'Republika', '2004', 10),
+(6, 'Dilan: Dia adalah Dilanku Tahun 1990', 'Pidi Baiq', 'Pastel Boooks', '2014', 10),
+(7, 'Atomic Habits', 'James Clear', 'Avery', '2025', 10),
+(8, 'Rich Dad Poor Dad', 'Robert T. Kiyosaki', 'Warner Books', '1997', 10),
+(9, 'The Alchemist', 'Paulo Coelho', 'Harper Collins', '1988', 10),
+(10, 'Harry Potter and the Philoshopher\'s Stone', 'J.K. Rowling', 'Blooomsbury', '1997', 10);
 
 -- --------------------------------------------------------
 
@@ -97,7 +100,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id_user`, `nama`, `username`, `password`, `role`) VALUES
 (1, 'idan', 'idan', '9185f3ec501c674c7c788464a36e7fb3', 'admin'),
 (2, 'aril', 'aril', '513e63de470114891012072f5ffd3d8b', 'user'),
-(3, 'aris', 'aris', '288077f055be4fadc3804a69422dd4f8', 'user');
+(3, 'aris', 'aris', '288077f055be4fadc3804a69422dd4f8', 'user'),
+(4, 'Rangga', 'Rangga', '9cf14425ccf948460228d4ff8fc69326', 'user');
 
 --
 -- Indexes for dumped tables
@@ -139,7 +143,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `detail_peminjaman`
@@ -157,7 +161,7 @@ ALTER TABLE `peminjaman`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
